@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",function(){let e=document.querySelectorAll(".gallery__indicator");function t(t){document.querySelector(".gallery__list").style.transform=`translateX(-${40*t}%)`,e.forEach((e,r)=>{e.classList.toggle("active",r===t)})}e.forEach((e,r)=>{e.addEventListener("click",()=>{t(r)})}),window.addEventListener("resize",()=>{let r=document.querySelector(".gallery__indicator.active");r&&t(Array.from(e).indexOf(r))}),t(0)});
+//# sourceMappingURL=index.8e10c2d7.js.map
